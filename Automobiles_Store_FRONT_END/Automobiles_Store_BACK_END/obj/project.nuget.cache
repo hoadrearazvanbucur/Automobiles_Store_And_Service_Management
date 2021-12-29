@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "kx9Tk60VuS7uUQ7/65SxJm1mNLlS+En5pN56ru70E/HRCPJqKnRbogO6xPj5ovBQmgCIoNgBeuOG09A3Koeuzg==",
+  "success": true,
+  "projectFilePath": "D:\\1_PROGRAMARE\\C#\\PROIECTE\\Automobiles_Store\\Automobiles_Store_FRONT_END\\Automobiles_Store_BACK_END\\Automobiles_Store_BACK_END.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Hoadrea Razvan\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Hoadrea Razvan\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
