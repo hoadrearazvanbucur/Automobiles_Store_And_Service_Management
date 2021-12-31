@@ -1,0 +1,12 @@
+D:\1_PROGRAMARE\C#\PROIECTE\Automobiles_Store\Automobiles_Store_FRONT_END\Automobiles_Store_FRONT_END\bin\Debug\Automobiles_Store_FRONT_END.exe.config
+D:\1_PROGRAMARE\C#\PROIECTE\Automobiles_Store\Automobiles_Store_FRONT_END\Automobiles_Store_FRONT_END\bin\Debug\Automobiles_Store_FRONT_END.exe
+D:\1_PROGRAMARE\C#\PROIECTE\Automobiles_Store\Automobiles_Store_FRONT_END\Automobiles_Store_FRONT_END\bin\Debug\Automobiles_Store_FRONT_END.pdb
+D:\1_PROGRAMARE\C#\PROIECTE\Automobiles_Store\Automobiles_Store_FRONT_END\Automobiles_Store_FRONT_END\bin\Debug\Automobiles_Store_BACK_END.dll
+D:\1_PROGRAMARE\C#\PROIECTE\Automobiles_Store\Automobiles_Store_FRONT_END\Automobiles_Store_FRONT_END\bin\Debug\Automobiles_Store_BACK_END.pdb
+D:\1_PROGRAMARE\C#\PROIECTE\Automobiles_Store\Automobiles_Store_FRONT_END\Automobiles_Store_FRONT_END\obj\Debug\Automobiles_Store_FRONT_END.csprojAssemblyReference.cache
+D:\1_PROGRAMARE\C#\PROIECTE\Automobiles_Store\Automobiles_Store_FRONT_END\Automobiles_Store_FRONT_END\obj\Debug\Automobiles_Store_FRONT_END.Properties.Resources.resources
+D:\1_PROGRAMARE\C#\PROIECTE\Automobiles_Store\Automobiles_Store_FRONT_END\Automobiles_Store_FRONT_END\obj\Debug\Automobiles_Store_FRONT_END.csproj.GenerateResource.cache
+D:\1_PROGRAMARE\C#\PROIECTE\Automobiles_Store\Automobiles_Store_FRONT_END\Automobiles_Store_FRONT_END\obj\Debug\Automobiles_Store_FRONT_END.csproj.CoreCompileInputs.cache
+D:\1_PROGRAMARE\C#\PROIECTE\Automobiles_Store\Automobiles_Store_FRONT_END\Automobiles_Store_FRONT_END\obj\Debug\Automobiles_Store_FRONT_END.csproj.CopyComplete
+D:\1_PROGRAMARE\C#\PROIECTE\Automobiles_Store\Automobiles_Store_FRONT_END\Automobiles_Store_FRONT_END\obj\Debug\Automobiles_Store_FRONT_END.exe
+D:\1_PROGRAMARE\C#\PROIECTE\Automobiles_Store\Automobiles_Store_FRONT_END\Automobiles_Store_FRONT_END\obj\Debug\Automobiles_Store_FRONT_END.pdb
