@@ -19,7 +19,7 @@ namespace Automobiles_Store_BACK_END.Controllers
         public void load()
         {
             this.clear();
-            StreamReader file = new StreamReader(Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) + @"\netstandard2.0\Resorces\Users_File.txt");
+            StreamReader file = new StreamReader(Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) + @"\Resorces\Users_File.txt");
             string line = "";
             while ((line = file.ReadLine()) != null)
                 lista.adaugareSfarsit(new User(line));
@@ -27,8 +27,7 @@ namespace Automobiles_Store_BACK_END.Controllers
         }
         public void save()
         {
-            StreamWriter file = new StreamWriter(Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) + @"\netstandard2.0\Resorces\Users_File.txt");
-            File.WriteAllText(Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) + @"\netstandard2.0\Resorces\Users_File.txt", string.Empty);
+            StreamWriter file = new StreamWriter(Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) + @"\Resorces\Users_File.txt");
             for (int i = 0; i < this.lista.dimensiune(); i++)
                 file.WriteLine(lista.obtine(i).Data.ToString());
             file.Close();
@@ -36,7 +35,7 @@ namespace Automobiles_Store_BACK_END.Controllers
         public void clear()
         {
             if (this.lista.listaGoala() != true)
-                for (int i = 0; i < this.lista.dimensiune(); i++)
+                for (int i = this.lista.dimensiune() - 1; i >= 0; i--)
                     this.lista.stergere(this.lista.obtine(i).Data);
         }
 
@@ -117,6 +116,20 @@ namespace Automobiles_Store_BACK_END.Controllers
                 return this.lista.obtine(this.lista.dimensiune() - 1).Data.Id + 1;
             else
                 return 1;
+        }
+
+        public ILista<User> Lista
+        {
+            get => this.lista;
+            set => this.lista = value;
+        }
+        public bool exist_Test(string text)
+        {
+            string[] textSplit = text.Split('|');
+            for (int i = 0; i < this.lista.dimensiune(); i++)
+                if (this.lista.obtine(i).Data.Id == int.Parse(textSplit[0]) && this.lista.obtine(i).Data.Admin == int.Parse(textSplit[1]) && this.lista.obtine(i).Data.Name == textSplit[2] && this.lista.obtine(i).Data.Password == textSplit[3])
+                    return true;
+            return false;
         }
     }
 }

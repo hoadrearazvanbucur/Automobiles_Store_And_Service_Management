@@ -61,6 +61,13 @@ namespace Automobiles_Store_BACK_END.Models
                     break;
                 }
         }
+        public bool findAutomobile(int dataAutomobile_ID)
+        {
+            for (int i = 0; i < this.orderSize; i++)
+                if (this.automobiles_ID[i] == dataAutomobile_ID)
+                    return true;
+            return false;
+        }
 
         public int Id
         {
