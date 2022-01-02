@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Automobiles_Store_FRONT_END._2_MOCKUPS;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,8 @@ namespace Automobiles_Store_FRONT_END
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Loading_Mockup_Form());
+            //Application.Run(new Login_Mockup_Form());
         }
     }
 }

@@ -12,4 +12,11 @@ D:\1_PROGRAMARE\C#\PROIECTE\Automobiles_Store\Automobiles_Store_FRONT_END\Automo
 D:\1_PROGRAMARE\C#\PROIECTE\Automobiles_Store\Automobiles_Store_FRONT_END\Automobiles_Store_FRONT_END\obj\Debug\Automobiles_Store_FRONT_END.pdb
 D:\1_PROGRAMARE\C#\PROIECTE\Automobiles_Store\Automobiles_Store_FRONT_END\Automobiles_Store_FRONT_END\bin\Debug\GENERIC_COLLECTIONS.dll
 D:\1_PROGRAMARE\C#\PROIECTE\Automobiles_Store\Automobiles_Store_FRONT_END\Automobiles_Store_FRONT_END\bin\Debug\GENERIC_COLLECTIONS.pdb
-D:\1_PROGRAMARE\C#\PROIECTE\Automobiles_Store\Automobiles_Store_FRONT_END\Automobiles_Store_FRONT_END\obj\Debug\Automobiles_Store_FRONT_END.Form1.resources
+D:\1_PROGRAMARE\C#\PROIECTE\Automobiles_Store\Automobiles_Store_FRONT_END\Automobiles_Store_FRONT_END\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+D:\1_PROGRAMARE\C#\PROIECTE\Automobiles_Store\Automobiles_Store_FRONT_END\Automobiles_Store_FRONT_END\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.dll
+D:\1_PROGRAMARE\C#\PROIECTE\Automobiles_Store\Automobiles_Store_FRONT_END\Automobiles_Store_FRONT_END\obj\Debug\Automobiles_Store_FRONT_END._2_MOCKUPS.Loading_Mockup_Form.resources
+D:\1_PROGRAMARE\C#\PROIECTE\Automobiles_Store\Automobiles_Store_FRONT_END\Automobiles_Store_FRONT_END\obj\Debug\Automobiles_Store_FRONT_END.exe.licenses
+D:\1_PROGRAMARE\C#\PROIECTE\Automobiles_Store\Automobiles_Store_FRONT_END\Automobiles_Store_FRONT_END\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.dll
+D:\1_PROGRAMARE\C#\PROIECTE\Automobiles_Store\Automobiles_Store_FRONT_END\Automobiles_Store_FRONT_END\bin\Debug\Guna.UI2.dll
+D:\1_PROGRAMARE\C#\PROIECTE\Automobiles_Store\Automobiles_Store_FRONT_END\Automobiles_Store_FRONT_END\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
+D:\1_PROGRAMARE\C#\PROIECTE\Automobiles_Store\Automobiles_Store_FRONT_END\Automobiles_Store_FRONT_END\obj\Debug\Automobiles_Store_FRONT_END._2_MOCKUPS.Login_Mockup_Form.resources
