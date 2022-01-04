@@ -17,18 +17,8 @@ namespace Automobiles_Store_FRONT_END._2_MOCKUPS
         {
             InitializeComponent();
             guna2TileButton1.Cursor = Cursors.Hand;
-            guna2TileButton1.MouseEnter += new EventHandler(laba);
-            guna2TileButton1.MouseLeave += new EventHandler(laba1);
         }
 
-        public void laba(object sender,EventArgs e)
-        {
-            (sender as Guna2TileButton).BackColor = Color.Aqua;
-        }
-        public void laba1(object sender, EventArgs e)
-        {
-            (sender as Guna2TileButton).BackColor = SystemColors.ControlLightLight;
-        }
 
         private void Login_Mockup_Form_Load(object sender, EventArgs e)
         {
