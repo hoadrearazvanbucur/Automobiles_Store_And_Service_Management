@@ -40,6 +40,9 @@
     <Reference Include="Bunifu.UI.WinForms.BunifuCircleProgress">
       <HintPath>C:\Users\Hoadrea Razvan\Desktop\BunifuCrack-main\Bunifu.UI.WinForms.BunifuCircleProgress.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
+      <HintPath>C:\Users\Hoadrea Razvan\Desktop\BunifuCrack-main\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
       <HintPath>C:\Users\Hoadrea Razvan\Desktop\BunifuCrack-main\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
     </Reference>
@@ -65,6 +68,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="2_MOCKUPS\Admin_Automobile_Iterface_Mockup_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2_MOCKUPS\Admin_Automobile_Iterface_Mockup_Form.Designer.cs">
+      <DependentUpon>Admin_Automobile_Iterface_Mockup_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="2_MOCKUPS\Loading_Mockup_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +88,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="2_MOCKUPS\Admin_Automobile_Iterface_Mockup_Form.resx">
+      <DependentUpon>Admin_Automobile_Iterface_Mockup_Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="2_MOCKUPS\Loading_Mockup_Form.resx">
       <DependentUpon>Loading_Mockup_Form.cs</DependentUpon>
     </EmbeddedResource>
@@ -109,6 +121,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\GENERIC_COLLECTIONS\GENERIC_COLLECTIONS\GENERIC_COLLECTIONS.csproj">
+      <Project>{6ac5f4b4-df50-4e5e-b783-585772783e32}</Project>
+      <Name>GENERIC_COLLECTIONS</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Automobiles_Store_BACK_END\Automobiles_Store_BACK_END.csproj">
       <Project>{11bc963d-037f-46f8-8130-cfbcf805def5}</Project>
       <Name>Automobiles_Store_BACK_END</Name>

@@ -20,3 +20,5 @@ D:\1_PROGRAMARE\C#\PROIECTE\Automobiles_Store\Automobiles_Store_FRONT_END\Automo
 D:\1_PROGRAMARE\C#\PROIECTE\Automobiles_Store\Automobiles_Store_FRONT_END\Automobiles_Store_FRONT_END\bin\Debug\Guna.UI2.dll
 D:\1_PROGRAMARE\C#\PROIECTE\Automobiles_Store\Automobiles_Store_FRONT_END\Automobiles_Store_FRONT_END\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
 D:\1_PROGRAMARE\C#\PROIECTE\Automobiles_Store\Automobiles_Store_FRONT_END\Automobiles_Store_FRONT_END\obj\Debug\Automobiles_Store_FRONT_END._2_MOCKUPS.Login_Mockup_Form.resources
+D:\1_PROGRAMARE\C#\PROIECTE\Automobiles_Store\Automobiles_Store_FRONT_END\Automobiles_Store_FRONT_END\obj\Debug\Automobiles_Store_FRONT_END._2_MOCKUPS.Admin_Automobile_Iterface_Mockup_Form.resources
+D:\1_PROGRAMARE\C#\PROIECTE\Automobiles_Store\Automobiles_Store_FRONT_END\Automobiles_Store_FRONT_END\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.dll

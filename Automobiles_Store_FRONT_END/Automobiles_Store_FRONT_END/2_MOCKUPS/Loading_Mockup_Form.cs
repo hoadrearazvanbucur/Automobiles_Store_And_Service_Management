@@ -18,30 +18,24 @@ namespace Automobiles_Store_FRONT_END._2_MOCKUPS
         public Loading_Mockup_Form()
         {
             InitializeComponent();
-            Image im = Image.FromFile(Application.StartupPath + @"\Images\logo.png");
-            pictureBox1.BackgroundImage = im;
             load();
         }
 
         public void load()
         {
             this.timer= new Timer();
-            this.timer.Interval = 40;
+            this.timer.Interval = 35;
             this.timer.Tick += new EventHandler(timer_Tick);
             this.timer.Start();
+
+            Image im = Image.FromFile(Application.StartupPath + @"\Images\logo.png");
+            PctLogoLoading.BackgroundImage = im;
         }
 
         public void timer_Tick(object sender, EventArgs e)
-        {
-            guna2ProgressBar1.Value = this.value;
-            label1.Text = $"Loading Modules ...   {this.value}%";
-            if (this.value == 100)
-            {
-                this.timer.Stop();
-                this.Hide();
-                Login_Mockup_Form f = new Login_Mockup_Form();
-                f.Show();
-            }
+        {    
+            LblLoadingModuleLoading.Text = $"Loading modules...  {PBLoading.Value = this.value}%";
+            if (this.value == 100)  this.timer.Stop();
             this.value += 1;
         }
     }

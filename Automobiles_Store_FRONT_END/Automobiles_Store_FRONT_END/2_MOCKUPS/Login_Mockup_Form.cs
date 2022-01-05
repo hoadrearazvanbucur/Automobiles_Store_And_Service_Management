@@ -16,34 +16,30 @@ namespace Automobiles_Store_FRONT_END._2_MOCKUPS
         public Login_Mockup_Form()
         {
             InitializeComponent();
-            guna2TileButton1.Cursor = Cursors.Hand;
+            load();
         }
-
-
-        private void Login_Mockup_Form_Load(object sender, EventArgs e)
+        public void load()
         {
-            guna2ComboBox1.Text = guna2ComboBox1.Items[0].ToString();
-            guna2ComboBox1.TextChanged += new EventHandler(test);
+            CBUserLogin.Text = CBUserLogin.Items[0].ToString();
+            CBUserLogin.TextChanged += new EventHandler(CBUserLogin_TextChanged);
+
             Image im1 = Image.FromFile(Application.StartupPath + @"\Images\logo.png");
-            Image im2 = Image.FromFile(Application.StartupPath + @"\Images\userLogin.png");
-            Image im3 = Image.FromFile(Application.StartupPath + @"\Images\lockedLogin.png");
-            pictureBox1.BackgroundImage = im1;
-            pictureBox3.BackgroundImage = im3;
-            pictureBox4.BackgroundImage = im2;
+            Image im2 = Image.FromFile(Application.StartupPath + @"\Images\user.png");
+            Image im3 = Image.FromFile(Application.StartupPath + @"\Images\locked.png");
+            PctLogoLogin.BackgroundImage = im1;
+            PctUsernameLogin.BackgroundImage = im2;
+            PctPasswordLogin.BackgroundImage = im3;
         }
 
-        public void test(object sender, EventArgs e)
+        public void CBUserLogin_TextChanged(object sender, EventArgs e)
         {
-            if ((sender as Guna2ComboBox).Text == "Admin" || (sender as Guna2ComboBox).Text == "User")
-            {
-                guna2ComboBox1.Items.Remove("Choose");
-            }
+            if ((sender as Guna2ComboBox).Text == "Administrator" || (sender as Guna2ComboBox).Text == "Customer")
+                CBUserLogin.Items.Remove("Choose the user");
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void BtnExitLogin_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
     }
-
 }
