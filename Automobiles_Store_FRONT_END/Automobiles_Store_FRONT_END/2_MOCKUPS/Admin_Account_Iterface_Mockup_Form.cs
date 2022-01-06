@@ -1,5 +1,4 @@
-﻿using Automobiles_Store_BACK_END.Controllers;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,15 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Bunifu.UI.WinForms;
 using Guna.UI2.WinForms;
-using Automobiles_Store_BACK_END.Models;
+using Bunifu.UI.WinForms;
+using Automobiles_Store_BACK_END.Controllers;
 
 namespace Automobiles_Store_FRONT_END._2_MOCKUPS
 {
-    public partial class Admin_Automobile_Iterface_Mockup_Form : Form
+    public partial class Admin_Account_Iterface_Mockup_Form : Form
     {
-        public Admin_Automobile_Iterface_Mockup_Form()
+        public Admin_Account_Iterface_Mockup_Form()
         {
             InitializeComponent();
 
@@ -35,7 +34,16 @@ namespace Automobiles_Store_FRONT_END._2_MOCKUPS
             this.Left = Screen.PrimaryScreen.Bounds.Width / 2 - 635;
             this.Top = Screen.PrimaryScreen.Bounds.Height / 2 - 370;
 
+            CBUserLogin.Text = CBUserLogin.Items[0].ToString();
+            CBUserLogin.TextChanged += new EventHandler(CBUserLogin_TextChanged);
+
             test();
+        }
+
+        public void CBUserLogin_TextChanged(object sender, EventArgs e)
+        {
+            if ((sender as Guna2ComboBox).Text == "True" || (sender as Guna2ComboBox).Text == "False")
+                CBUserLogin.Items.Remove("Choose");
         }
 
         private void BtnExitLogin_Click(object sender, EventArgs e)
@@ -43,15 +51,15 @@ namespace Automobiles_Store_FRONT_END._2_MOCKUPS
             Application.Exit();
         }
 
-        public Control_Automobile c;
+        public Control_User c;
 
         public void test()
         {
-            c = new Control_Automobile();
-            c.adding($"{c.generationId()}|1|234|99|Mercedes|S Klass|Maro");
-            c.adding($"{c.generationId()}|2|234|99|Mercedes|S Klass|Maro");
-            c.adding($"{c.generationId()}|3|2324|991|Mercewdes|S Klawss|Marodwa");
-            c.adding($"{c.generationId()}|4|2324|991|Mercewdes|S Klawss|Marodwa");
+            c = new Control_User();
+            c.adding($"{c.generationId()}|1|Nume1|Parola1");
+            c.adding($"{c.generationId()}|0|Nume1|Parola1");
+            c.adding($"{c.generationId()}|0|Nume1|Parola1");
+            c.adding($"{c.generationId()}|1|Nume1|Parola4");
 
             BunifuDataGridView gridView = new BunifuDataGridView();
             tabel(c, gridView);
@@ -59,7 +67,7 @@ namespace Automobiles_Store_FRONT_END._2_MOCKUPS
         }
 
 
-        public void tabel(Control_Automobile control, BunifuDataGridView gridView)
+        public void tabel(Control_User control, BunifuDataGridView gridView)
         {
             gridView.CellClick += gridView_CellClick;
 
@@ -77,28 +85,23 @@ namespace Automobiles_Store_FRONT_END._2_MOCKUPS
             DataGridViewTextBoxColumn c0 = new DataGridViewTextBoxColumn();
             c0.HeaderText = "Id"; c0.Name = "Id";
             DataGridViewTextBoxColumn c1 = new DataGridViewTextBoxColumn();
-            c1.HeaderText = "Brand"; c1.Name = "brand";
+            c1.HeaderText = "Name"; c1.Name = "nume";
             DataGridViewTextBoxColumn c2 = new DataGridViewTextBoxColumn();
-            c2.HeaderText = "Model"; c2.Name = "model";
+            c2.HeaderText = "Password"; c2.Name = "password";
             DataGridViewTextBoxColumn c3 = new DataGridViewTextBoxColumn();
-            c3.HeaderText = "Color"; c3.Name = "color";
-            DataGridViewTextBoxColumn c4 = new DataGridViewTextBoxColumn();
-            c4.HeaderText = "Kilometres"; c4.Name = "kilometres";
-            DataGridViewTextBoxColumn c5 = new DataGridViewTextBoxColumn();
-            c5.HeaderText = "Price"; c5.Name = "price";
-            DataGridViewTextBoxColumn c6 = new DataGridViewTextBoxColumn();
-            c6.HeaderText = "Amount"; c6.Name = "amount";
-            gridView.Columns.AddRange(c0,c1,c2,c3,c4,c5,c6);
-            
-            for(int i=0;i<control.Lista.dimensiune();i++)
-                gridView.Rows.Add(control.Lista.obtine(i).Data.Id, control.Lista.obtine(i).Data.Brand, control.Lista.obtine(i).Data.Model, control.Lista.obtine(i).Data.Color, control.Lista.obtine(i).Data.Km, control.Lista.obtine(i).Data.Price, control.Lista.obtine(i).Data.Amount);
+            c3.HeaderText = "Admin"; c3.Name = "Admin";
+
+            gridView.Columns.AddRange(c0, c1, c2, c3);
+
+            for (int i = 0; i < control.Lista.dimensiune(); i++)
+                gridView.Rows.Add(control.Lista.obtine(i).Data.Id, control.Lista.obtine(i).Data.Name, control.Lista.obtine(i).Data.Password, (control.Lista.obtine(i).Data.Admin == 1 ? "True" : "False"));
         }
 
         private void gridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             Panel panel = null;
             BunifuDataGridView gridView = null;
-            foreach(Control control in this.Controls)
+            foreach (Control control in this.Controls)
                 if ((control is Guna2Panel))
                     if ((control as Guna2Panel).Name == "PanelAdminAutomobile")
                         panel = control as Guna2Panel;

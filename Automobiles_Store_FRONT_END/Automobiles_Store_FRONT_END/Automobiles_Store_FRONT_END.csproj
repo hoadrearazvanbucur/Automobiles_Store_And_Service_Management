@@ -68,6 +68,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="2_MOCKUPS\Admin_Account_Iterface_Mockup_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2_MOCKUPS\Admin_Account_Iterface_Mockup_Form.Designer.cs">
+      <DependentUpon>Admin_Account_Iterface_Mockup_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="2_MOCKUPS\Admin_Automobile_Iterface_Mockup_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +94,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="2_MOCKUPS\Admin_Account_Iterface_Mockup_Form.resx">
+      <DependentUpon>Admin_Account_Iterface_Mockup_Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="2_MOCKUPS\Admin_Automobile_Iterface_Mockup_Form.resx">
       <DependentUpon>Admin_Automobile_Iterface_Mockup_Form.cs</DependentUpon>
     </EmbeddedResource>
