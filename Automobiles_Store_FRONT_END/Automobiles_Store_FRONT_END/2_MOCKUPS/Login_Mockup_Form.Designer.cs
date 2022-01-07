@@ -67,6 +67,7 @@
             this.BtnLogin.Size = new System.Drawing.Size(120, 47);
             this.BtnLogin.TabIndex = 19;
             this.BtnLogin.Text = "Login";
+            this.BtnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
             // 
             // CBUserLogin
             // 

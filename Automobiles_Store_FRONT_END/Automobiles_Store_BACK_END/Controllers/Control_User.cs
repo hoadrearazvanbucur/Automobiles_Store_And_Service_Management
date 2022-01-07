@@ -19,7 +19,7 @@ namespace Automobiles_Store_BACK_END.Controllers
         public void load()
         {
             this.clear();
-            StreamReader file = new StreamReader(Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) + @"\Resorces\Users_File.txt");
+            StreamReader file = new StreamReader(@"D:\1_PROGRAMARE\C#\PROIECTE\Automobiles_Store\Automobiles_Store_FRONT_END\Automobiles_Store_FRONT_END\bin\Debug\Resorces\Users_File.txt");
             string line = "";
             while ((line = file.ReadLine()) != null)
                 lista.adaugareSfarsit(new User(line));
@@ -27,7 +27,7 @@ namespace Automobiles_Store_BACK_END.Controllers
         }
         public void save()
         {
-            StreamWriter file = new StreamWriter(Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) + @"\Resorces\Users_File.txt");
+            StreamWriter file = new StreamWriter(@"D:\1_PROGRAMARE\C#\PROIECTE\Automobiles_Store\Automobiles_Store_FRONT_END\Automobiles_Store_FRONT_END\bin\Debug\Resorces\Users_File.txt");
             for (int i = 0; i < this.lista.dimensiune(); i++)
                 file.WriteLine(lista.obtine(i).Data.ToString());
             file.Close();

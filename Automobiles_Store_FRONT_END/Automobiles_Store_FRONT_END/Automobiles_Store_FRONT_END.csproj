@@ -92,6 +92,12 @@
     <Compile Include="2_MOCKUPS\Login_Mockup_Form.Designer.cs">
       <DependentUpon>Login_Mockup_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="2_MOCKUPS\User_Interface_Mockup_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2_MOCKUPS\User_Interface_Mockup_Form.Designer.cs">
+      <DependentUpon>User_Interface_Mockup_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="2_MOCKUPS\Admin_Account_Iterface_Mockup_Form.resx">
@@ -105,6 +111,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="2_MOCKUPS\Login_Mockup_Form.resx">
       <DependentUpon>Login_Mockup_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2_MOCKUPS\User_Interface_Mockup_Form.resx">
+      <DependentUpon>User_Interface_Mockup_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
